@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XPECommerce.Pages.LoginPage"
+             Title="Login">
+  <ScrollView>
+    <StackLayout Spacing="10">
+      <Label Text="ECommerce"
+             FontSize="30"
+             FontAttributes="Bold"
+             HorizontalOptions="Center"
+             VerticalOptions="Center"/>
+      <Entry x:Name="userEntry"
+             Keyboard="Email"
+             Placeholder="Enter your email"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="Center"/>
+      <Entry x:Name="passwordEntry"
+             IsPassword="True"
+             Placeholder="Enter your password"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="Center"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Remember me"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Switch x:Name="remembermeSwitch"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center"/>
+      </StackLayout>
+      <ActivityIndicator x:Name="waitActivityIndicator"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"/>
+      <Button x:Name="loginButton"
+              Text="Login"
+              BackgroundColor="Yellow"
+              TextColor="Black"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <Button x:Name="forgotPasswordButton"
+              Text="Forgot password"
+              BackgroundColor="Purple"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <Button x:Name="registerButton"
+              Text="New User"
+              BackgroundColor="Aqua"
+              TextColor="Black"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>
